@@ -34,6 +34,9 @@ jobs:
       - name: Instalar dependências
         run: npm ci
 
+      - name: Subir aplicação
+        run: npm start
+
       - name: Executar testes
         run: npm test
         env:
