@@ -10,7 +10,9 @@ describe('Login externo', () => {
                 email: 'admin@escola.com',
                 senha: 'admin123'
             })
+        
+        expect(loginResposta.status).to.equal(200)
     })
 
-    expect(loginResposta.status).to.equal(200)
+    
 })
