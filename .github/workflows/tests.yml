@@ -35,7 +35,9 @@ jobs:
         run: npm ci
 
       - name: Subir aplicação
-        run: npm start
+        run: npm start &
+      
+      - name: Aguardar a api iniciar
 
       - name: Executar testes
         run: npm test
